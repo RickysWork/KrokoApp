@@ -1,0 +1,59 @@
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    outline: 1px solid lime; 
+}
+
+
+
+
+
+
+:root{
+    /* --background-color: rgb(41, 45, 63); */
+    --background-color: rgb(16 23 36);
+
+
+
+    --header-background-color: none;
+    /* --header-background-color: rgb(0, 90, 72); */
+    --sidebar-background-color: rgb(20 27 41);
+    /* --sidebar-background-color: rgb(0, 90, 72); */
+
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Prevents side-scrolling */
+}
+
+
+
+body {
+    font-family: "Manrope", Arial;
+    margin: 0;
+
+    background-color: var(--background-color);
+    
+    display: flex;
+
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+p{
+    margin: 0;
+}
+
+div{
+    font-family: "Manrope", Arial;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+

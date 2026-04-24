@@ -1,0 +1,137 @@
+
+
+main{
+    margin-inline: 40px;
+    flex: 1;
+    height: calc(100vh - 110px);
+    background-color: brown;
+
+    margin-top: 100px;
+    gap: 120px;
+    
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    
+    /* hide scrollbar */
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+.dashboard_container{
+    min-height: 600px;
+    background-color: rgb(25 33 49);
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    
+}
+
+
+.dashboard_header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+
+.dashboard_label{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.date_label{
+    font-size: 30px;
+    font-style: italic;
+
+}
+
+.streak_label{
+    color: rgb(217 255 79);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+.dashboard_container_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.2fr 1fr;
+    flex: 1;
+    gap: 25px;
+}
+
+.daily_stats,
+.weekly_stats,
+.water_tracker,
+.performance_notes{
+    background-color: rgb(13 21 33);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+}   
+
+.card_title{
+    height: 35px;
+    display: flex;
+    align-items: end;
+}
+
+.card_title p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card_body{
+    flex: 1;
+    display: flex;
+}
+
+.performance_notes_textbox{
+    background-color: rgb(27 35 51);
+    appearance: none;
+    outline: none;
+    border: none;
+    color: white;
+    flex: 1;
+    margin-top: 20px;
+    white-space: pre-wrap;
+    resize: none;
+    border-radius: 10px;
+    padding: 13px;
+
+
+    scrollbar-width: thin;
+    scrollbar-color: rgb(57, 74, 107) transparent;
+    
+}
+
+
+
+.performance_notes_textbox::placeholder{
+    color: rgb(135 143 157);
+}
+
+
+
+/* @media (max-width: 393px){
+    main{
+        margin-top: 200px;
+        height: calc(100vh - 300px);
+    }
+} */
+

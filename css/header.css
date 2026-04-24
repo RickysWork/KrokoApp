@@ -1,0 +1,98 @@
+
+
+
+header{
+    background-color: var(--header-background-color);
+    height: 90px;
+    position:fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    margin-left: 320px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+.logo div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo div img{
+    height: 50px;
+
+    -webkit-user-drag: none; /* Safari and Chrome */
+    user-select: none;       /* Standard syntax */
+    -moz-user-select: none;  /* Firefox */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none;   /* IE 10+ */
+}
+
+.logo div p{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+
+    margin-left: 10px;
+}
+
+
+
+.user_actions{
+    display: flex;
+    width: auto;
+    margin-right: 90px;
+    gap: 20px;
+}
+
+.icon_btn{
+    background: none;
+    border: none;
+    padding: 0;
+
+    height: auto;
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon_btn img{
+    background-color: transparent  ;
+
+    height: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width: 1100px){
+    .logo{
+        margin-inline: 40px;
+    }
+
+    header{
+        height: 180px;
+    }
+
+    
+}
